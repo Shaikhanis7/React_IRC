@@ -1,0 +1,97 @@
+@import '~boxicons/css/boxicons.min.css';
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+    transition: all 0.5s;
+}
+
+.login {
+    background: #f0f0f0; 
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+
+.login__registre h1 {
+    text-align: center;
+    color: #333; 
+}
+
+.login__icon {
+    font-size: 40px;
+    text-align: center;
+    color: #555; 
+    position: relative;
+    top: 8px;
+
+     
+}
+
+.login__input {
+    height: 40px;
+    margin-bottom: 20px; 
+    padding: 8px;
+    padding-bottom: 2px;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    display: a;
+    bottom: 10px;
+    width: 14rem;
+}
+
+.forgot,.btn
+{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.btn{
+    margin-bottom: 8px;
+}
+button{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 34px;
+    background:  #9D4BFF;
+    color: aliceblue;
+    border: none;
+    font-weight: 550;
+    font-size: medium;
+    cursor: pointer;
+
+}
+
+.sign-up
+{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.login__input:hover,
+.login__input:focus {
+    border-color: #3498db; 
+    outline: none; 
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    transition: 1s;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+
+
+
