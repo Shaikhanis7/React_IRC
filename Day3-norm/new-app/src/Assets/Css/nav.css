@@ -1,0 +1,53 @@
+@import '~boxicons/css/boxicons.min.css';
+*{
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+.navbar h1{
+    margin-left: 12px;
+}
+.navbar
+{
+    /* background: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    line-height: 43px;
+    margin-left: 40px;
+    color: black;
+}
+.input_box
+{
+    margin-top: 10px;
+    display: inline-block;
+    /* border-bottom: #4CC9F0; */
+}
+.input_box input{
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    width: 6rem;
+    margin-right: 4rem;
+    font-weight: 600;
+    font-size: 15px;
+    /* border-bottom: #4CC9F0; */
+}
+.search_icon
+{
+    font-size: large;
+    position: relative;
+    left: 96px;
+    top: 5px;
+
+}
