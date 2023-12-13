@@ -1,0 +1,305 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import 'boxicons/css/boxicons.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Mukta&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .tool-bar
+  {
+    background-color: black;
+    color: #fff;
+    display:flex ;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    
+  }
+
+
+  .sidebar
+  {
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    transform: translateX(-100%);
+    transition: all 0.4s;
+    z-index: 100;
+
+  }
+
+  .sidebar li{
+      list-style: none;
+      padding:  1rem 2rem;
+      border-bottom: solid #fff;
+      border-bottom: solid rgba(255,255,255,0.1)1px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 300
+
+
+  }
+
+  .sidebar li a{
+      color: #FFF;
+      text-decoration: none;
+      width: 100%;
+      transition: 0ms;
+  }
+ 
+
+  .sidebar li a:hover{
+     /* background-color: red; */
+     color: black;
+     width: 100%;
+     height: 100%;
+     transition: 0ms;
+  }
+  .sidebar li:hover{
+           background-color: #fff;
+           color: black;
+  }
+
+
+  .backdrop
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+  }
+
+.sidebar--open
+{
+    transform: translateX(0%);
+
+}
+
+
+.backdrop--open{
+    display: block;
+
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: #fff;
+    position: relative;
+}
+
+.nav-links ul li,.nav-links ul li a
+{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 550;
+    font-family: 'Afacad', sans-serif;
+    color: #FFF;
+    text-decoration: none;
+
+}
+
+.nav-links li ul a{
+    display: inline-block;
+}
+.nav-links ul li:hover,.nav-links ul li Link:hover{
+    cursor: pointer;
+}
+.ri-menu-line
+{
+    font-size:30px;
+    
+}
+
+
+
+/*   i can write anything here */
+.container{
+    position: relative;
+    top: 5vh;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 350px;
+    padding: 25px;
+    border-radius: 6px;
+    background: #FFF;
+    border: 1px solid;
+}
+
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+.form .field{
+    position: relative;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+.field input,
+.field button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field input{
+    position: relative;
+    outline: none;
+    padding: 0 8px;
+    border: 1px solid#CACACA;
+    right: 9px;
+}
+.field input:focus{
+    border-bottom-width: 1px;
+}
+.field button{
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.field button:hover{
+    background-color: #016dcb;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form-content a:hover{
+    text-decoration: underline;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #d4d4d4;
+}
+.line::before{
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+.media-options a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a.facebook{
+    color: #fff;
+    background-color: #4267b2;
+}
+a.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.facebook-icon,
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+img.google-img{
+    height: 20px;
+    width: 20px;
+}
+a.google{
+    border: 1px solid #CACACA;
+}
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
+}
+
+
+.form-link span input {
+    position: relative;
+    display: inline-block;
+    right: 8px;
+    
+}
+
+.image{
+    display: inline-block;
+}
+.image img
+{
+    height: 87vh;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.display
+{
+    width:100%;
+    margin-top: 2px;
+    
+}
+
+.display p{
+    /* text-align: center; */
+    /* line-height: 3px; */
+    color: red;
+}
+
+.title h1{
+    position: relative;
+    top: 45px;
+    right: 5px;
+}

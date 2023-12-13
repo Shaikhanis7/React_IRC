@@ -1,0 +1,133 @@
+body{
+    overflow-x: hidden;
+}
+.image
+{
+    display: inline-block;
+    position: relative;
+  
+    /* bottom: 10rem; */
+}
+
+h2{
+    margin-top: 34px;
+}
+.image img{
+    width: 450px;
+    
+}
+
+img.imag{
+    width: 700px;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 24px;
+    width: 800px;
+    
+}
+.content h1{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    line-height: 5rem;
+}
+
+.contain
+{
+    display: flex;
+    /* background: grey; */
+    width: 100%;
+}
+
+.air{
+       color:black;
+       text-align: center;
+    }
+    
+  .paragraph  p{
+        width:35rem
+        
+       
+    }
+
+    .paragraph
+    {
+    margin-top: 34px;
+        padding-left:3rem;
+    }
+
+
+.contact button{
+    width: 6rem;
+    background: black;
+    padding: 10px;
+    color: white;
+    outline: none;
+    border: none;
+ border-radius:20px;
+ position: relative;
+ left: 16.4rem;
+ font-weight: 700;
+}
+
+.topic
+{
+    text-align: center;
+    
+}
+
+.arrow
+{
+    position: relative;
+    left: 17rem;
+    top: 0.7rem;
+
+}
+
+.arrow i{
+    font-size: 35px;
+    
+}
+
+.product-list
+{
+    width: 14rem;
+    /* background: black; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main
+{
+    display: flex;
+    
+}
+
+.product{
+    height: 150px;
+    width: 150px;
+    /* background-color: red; */
+     margin: 5px;
+     display: inline-block;
+}
+
+.product img{
+    height: 130px;
+    width: 130px;
+}
+
+
+.title
+{
+    display: inline-block;
+    position: relative;
+    bottom: 3rem;
+    left: 1.9rem;
+}
