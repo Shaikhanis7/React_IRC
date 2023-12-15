@@ -1,15 +1,9 @@
+import React from 'react'
 
-import Content from './Components/Content';
-import Nav from './Components/Nav';
-import Cards from './Components/Cards';
-import Load from './Components/Load';
-function App() {
+const App = () => {
   return (
-    <div className="App">
-          <Load/>
-      
-    </div>
-  );
+    <div></div>
+  )
 }
 
-export default App;
+export default App
