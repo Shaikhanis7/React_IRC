@@ -1,0 +1,30 @@
+::placeholder
+{
+    font-size: 16px;
+}
+
+.horizontal p:before{
+        content: "";
+        display: block;
+        width: 210px;
+        height: 2px;
+        background: #000;
+        position: relative;
+        top:14px;
+}
+.horizontal p:after{
+        content: "";
+        display: block;
+        width: 210px;
+        height: 2px;
+        background: #000;
+        position: relative;
+        bottom: 12px;
+        left: 240px;
+        /* top:14px; */
+}
+
+.horizontal p span{
+    background: white;
+    z-index: 2;
+}

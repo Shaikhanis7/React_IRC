@@ -1,0 +1,50 @@
+
+.side{
+ 
+    background-color:whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+.sidetop
+{
+  background-color:whitesmoke;
+  color: black;
+  text-align: center;
+
+}
+.side:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+.sidebar-container{
+  transition: 4.5s linear ease-in;
+}
+
+.sidepanel
+{
+  height: 100vw;
+}
+
+.sidemenu,.Navbar
+{
+  background-color:#f4f4f4;
+  height: 3.2rem;
+}
+
+.admin{
+     height: 80vh;
+     width: 80vw;
+}
+.col-1
+{
+  
+  background-color:#f4f4f4;
+}
+
+.sidemenu:hover{
+  background-color:white;
+  cursor: pointer;
+}
+

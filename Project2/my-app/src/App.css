@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a{
+     text-decoration: none;
+     color: black;
+}
+
+.nav-links a:hover{
+     transition: all 0.5s;
+     text-decoration: underline;
+}
+
+a.nav-link:hover
+{
+     background-color: rgb(211, 209, 209);
+     /* color: aliceblue; */
+}
+
+
+.offcanvas-body
+{
+  width: 300px;
+}
+
+nav{
+     width: 100%;
+}
+
+.icon{
+       cursor: pointer;
+       padding: 2px;
+}
+
+.icon:hover
+{
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.container
+{
+  width: 1230px;
+}
+
+
+.findtop:after{
+  content: "";
+  display: block;
+  width: 140px;
+  height: 2px;
+  background: #000;
+  position: relative;
+  bottom: -0.6rem;
+  left: 30rem;
+}
+
+
+.adduser
+{
+  width: 30vw;
+}
+
+.del-icon
+{
+  color: rgb(50, 13, 13);
+}
+
+.del-icon:hover{
+  cursor: pointer;
+}
+
+
+a{
+  color: white;
+}

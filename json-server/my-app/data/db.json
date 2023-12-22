@@ -1,0 +1,21 @@
+{
+    "items":[
+        {
+            "id":1,
+            "checked":false,
+            "item":"shaikh"
+        },
+        {
+            "id":2,
+            "checked":false,
+            "item":"mini"
+            
+        },
+        {
+            
+            "id":3,
+            "checked":true,
+            "item":"anis"
+        }
+    ]
+}
