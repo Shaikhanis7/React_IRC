@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body
+{
+    max-height: 100vh;
+    max-width: 100vw;
+}
+.main
+{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    background-color: #ff8c6b;
+    padding: 2rem;
+}
+
+.box
+{
+    max-width: 1020px;
+    height: 640px;
+    background-color: #fff;
+}
