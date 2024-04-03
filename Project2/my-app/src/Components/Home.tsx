@@ -24,6 +24,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInfoCircle } from "react-icons/fa";
 import { MdOutlineMiscellaneousServices } from "react-icons/md"
+import { useAuth } from './AuthContext';
 
 const Home = () => {
 
@@ -39,55 +40,65 @@ const Home = () => {
    {
       setSide(!side);
    }
+
+   const { isLoggedIn, logout } = useAuth();
+
+
+   const handleLogout=()=>
+   {
+    logout();
+   }
+  
+   
   return (
          <>
 
     
-         
-             <nav className="bg-white m-0 p-0 d-flex flex-row w-100 justify-content-between p-2 m-2">
-               <div className="name d-inline-block">
-                <h2>Freelancer</h2>
-               </div>
-               <div className="nav-links d-inline-block mt-1 me-5 pe-5">
-                 <ul className="d-flex gap-5 ">
-                    <li className="list-unstyled d-inline-block">
-                          <a href="">Hire Freelancers</a>
-                    </li>
-                    <li className="list-unstyled d-inline-block">
-                          <a href="">Project</a>
-                    </li>
-                    <li onClick={toggleLog} className="list-unstyled d-inline-block">
-                    <Link to='/login' >Login</Link>
-                    </li>
-                    <li className="list-unstyled d-inline-block">
-                    <Link to='/signup'>SignUp</Link>
-                    </li>
-                 </ul>
-               </div>
+<nav className="bg-white m-0 p-0 d-flex flex-row w-100 justify-content-between p-2 m-2">
+        <div className="name d-inline-block">
+          <h2>Freelancer</h2>
+        </div>
+        <div className="nav-links d-inline-block mt-1 me-5 pe-5">
+          <ul className="d-flex gap-5 ">
+            <li className="list-unstyled d-inline-block">
+              <a href="">Hire Freelancers</a>
+            </li>
+            <li className="list-unstyled d-inline-block">
+              <a href="">Project</a>
+            </li>
+            {isLoggedIn ? <li className="list-unstyled d-inline-block">
+              <Link to='/login' >Login</Link>
+            </li> : <li className="list-unstyled d-inline-block">
+              <Link to='/' onClick={handleLogout}>Logout</Link> </li>}
+            <li className="list-unstyled d-inline-block">
+              <Link to='/signup'>SignUp</Link>
+            </li>
+          </ul>
+        </div>
 
-               <div className="ham_burger me-4">
-               <GiHamburgerMenu size={25} onClick={toggleSidePanel}  className="icon" />
-               </div>
-             </nav>
+        <div className="ham_burger me-4">
+          <GiHamburgerMenu size={25} onClick={toggleSidePanel} className="icon" />
+        </div>
+      </nav>
 
-            <div className="container container-fluid m-2 w-100">
-                  <div className="row">
-                    <div className="col-6 mt-3">
-                        <div className="row mt-5 ms-2">
-                            <h1 className='text-center mt-5'>Discover the world top creaters</h1>
-                        </div>
-                        <div className="row mt-3 ms-2">
-                        <p className='text-center'>Empowering freelancers to achieve their goals and thrive in the world of freelancing. Whether you are a seasoned professional or just starting your freelance journey, we provide the tools and resources you need to succeed on your terms
-        </p>
-                        </div>
-                    </div>
-                    <div className="col-6 d-flex justify-content-center align-items-center">
-                        <div className="img d-inline-block  ms-5">
-                        <img src={frontimg} alt="" />
-                        </div>
-                    </div>
-                  </div>
+      <div className="container container-fluid m-2 w-100">
+        <div className="row">
+          <div className="col-6 mt-3">
+            <div className="row mt-5 ms-2">
+              <h1 className='text-center mt-5'>Discover the world top creators</h1>
             </div>
+            <div className="row mt-3 ms-2">
+              <p className='text-center'>Empowering freelancers to achieve their goals and thrive in the world of freelancing. Whether you are a seasoned professional or just starting your freelance journey, we provide the tools and resources you need to succeed on your terms
+              </p>
+            </div>
+          </div>
+          <div className="col-6 d-flex justify-content-center align-items-center">
+            <div className="img d-inline-block  ms-5">
+              <img src={frontimg} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
 
             <div className="container"><div className="row">
                 <div className="col">

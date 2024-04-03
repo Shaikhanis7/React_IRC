@@ -12,6 +12,7 @@ import { MdAdminPanelSettings } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
 import { MdModeEditOutline } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
+import FreelancerForm from './FreelancerForm.';
 interface User {
     id: number;
     username: string;
@@ -199,58 +200,7 @@ const Dashboard = () => {
                     </div>
                  </div>
                  ):(<></>)}
-                  {formuser?(<div className="row mt-3">
-                        <div className="col d-flex justify-content-center">
-                        <div className="card adduser">
-          <div className="card-body">
-            <h5 className="card-title text-center">Add User</h5>
-            <form>
-              <div className="form-group">
-                <label htmlFor="username">Username:</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="username"
-                  name="username"
-                  value={formData.username}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="jobRole">Job Role:</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="jobRole"
-                  name="jobRole"
-                  value={formData.jobRole}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="project">Project:</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="project"
-                  name="project"
-                  value={formData.project}
-                  onChange={handleChange}
-                />
-              </div>
-                    <div className='d-flex justify-content-center mt-2'>
-                   
-              <button type="button" className="btn bg-black text-white rounded-2" onClick={addUser}>
-                Add User
-              </button>
-              </div>
-            </form>
-          </div>
-        </div>
-                        </div>
-                    </div>):(<></>)}
+                  {formuser?(<FreelancerForm/>):(<></>)}
                  
 
                 </div>
