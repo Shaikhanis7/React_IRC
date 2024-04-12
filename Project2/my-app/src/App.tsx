@@ -12,8 +12,12 @@ import Signup from './Components/Signup';
 import { Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './Components/AuthContext';
 import FreelancerForm from './Components/FreelancerForm.';
-import FreelancerTable from './Components/FreelanceTable';
+import FreelancerTable from './Components/FreelancerTable';
 import FreelancerCard from './Components/FreelancerCard';
+import ActionAreaCard from './Components/ActionAreaCard';
+import ActionAreaCardComponents from './Components/ActionAreaCardContainer';
+import FreelancerPage from './Components/FreelancerPage';
+import FreelancerList from './Components/FreelancerList';
 function App() {
   
 
@@ -25,17 +29,21 @@ function App() {
     <Route  path='/login'  element={<Login/>}/>
     <Route  path='/signup'  element={<Signup/>}/>
     <Route  path='/dashboard'  element={<Dashboard/>}/>
-    </Routes> */}
-    {/* <Sidebar/> */}
-      {/* <Login/> */}
-      {/* <Signup/> */}
-      {/* <Home/> */}
-      {/* <Dashboard/> */}
-      {/* <UserList/> */}
+     </Routes> */}
+    {/* <Sidebar/>  
+      <Login/> 
+    <Signup/> 
+       <Home/>
+      <Dashboard/>
+      <UserList/> */}
       {/* </AuthProvider> */}
-      <FreelancerCard name={'john'} description={'how he is '} image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDdXmgMnXq-GKJzcVsyDG2QDmQfs2DvfRGzSRDOGF0W-kwssaSzh_TTaOK_g&s'}/>
+      {/* <FreelancerCard name={'john'} description={'how he is '} image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDdXmgMnXq-GKJzcVsyDG2QDmQfs2DvfRGzSRDOGF0W-kwssaSzh_TTaOK_g&s'}/> */}
+      {/* <ActionAreaCardComponents/> */}
       {/* <FreelancerTable/> */}
       {/* <FreelancerForm/>/ */}
+    {/* <FreelancerPage/>
+     */}
+     <FreelancerList/>
     </>
   )
 }

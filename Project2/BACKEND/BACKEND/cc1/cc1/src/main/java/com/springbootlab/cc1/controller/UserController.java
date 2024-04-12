@@ -1,4 +1,4 @@
-package com.springbootlab.cc1.controller;
+    package com.springbootlab.cc1.controller;
 
 import com.springbootlab.cc1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
